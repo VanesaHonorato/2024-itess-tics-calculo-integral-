@@ -13,6 +13,7 @@ package ciunidad1.aproximation;
  * vanegoho@gmail.com
  * 
  */
+
 public class funcionaproximacion {
     
     private double xIni;
@@ -28,7 +29,7 @@ public class funcionaproximacion {
         this.xEnd = xEnd;
         this.n = n;
      
-        this.x = new doub,le [n+1];
+        this.x = new double [n+1];
         this.fx = new double [n+1];
         
         
@@ -37,9 +38,9 @@ public class funcionaproximacion {
     public void compute() {
         
         dx = (xEnd - xIni) / n;
-        area = 0.0;
+      
         for(int i=0; i<= n; i++){
-            x[i] = xIni + i+dx;
+            x[i] = xIni + i*dx;
             fx[i] =x[i] * x[i];
             area = area + fx[i] * dx;
         }
